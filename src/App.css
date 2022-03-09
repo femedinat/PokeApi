@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  background-color: black;
+}
+
+.nav-img {
+  width: 160px;
+}
+
+.nav-text {
+  color: white;
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.searchbar {
+  background-color: white;
+  margin-right: 20px; 
+}
+
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+}
+
+.searchbar-btn button {
+  background-color: #365FA4;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
+}
+
+.pokedex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.40);
+  border-radius: 3px;
+}
+
+.pokemon-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  
+}
+.pokemon-image-container {
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.card-body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 10px 10px 10px 0px;
+flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top h3 {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.pokemon-type {
+  display: flex;
+  
+
+}
+.pokemon-type-text {
+  text-transform: capitalize;
+
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  align-items: center;
+}
+
+.pokemon-heart-btn{
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px (0, 0, 0, 0.25);
+  padding: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+.not-found-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.button-close-info {
+  float: right;
+  margin: 0px 10px;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  box-shadow: 4px 4px 18px rgba(0.5, 0.5, 0.5, 0.6);
+  border-radius: 3px;
+}
+.container-info h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.container-status{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-info-status{
+  padding: 30px;
+}
+
+.info-img {
+  width: 150px;
+  height: 150px;
+}
+
+.container-dados {
+  margin-left: -50px;
+  flex-direction: row;
+  display: flex;
+}
+
+.dados {
+  margin: 60px;
+}
+
+.App {
+  text-align: center;
+}
