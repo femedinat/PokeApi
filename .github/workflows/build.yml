@@ -1,4 +1,8 @@
-name: deploy
+name: Deployment
+
+concurrency: 
+  group: production
+  cancel-in-progress: true
 
 on:
   push:
@@ -6,19 +10,8 @@ on:
       - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
-      - name: Build web-app
-        run: |
-          npm ci
-          npm run build
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      - name: deploy
