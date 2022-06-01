@@ -13,7 +13,7 @@ jobs:
               uses: actions/checkout@main
 
             - name: Build and Deploy
-              uses: ./.github/actions/deploy
+              uses: actions/deploy
               env:
                   COMMIT_EMAIL: lipemg01@gmail.com
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
